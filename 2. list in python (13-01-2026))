@@ -1,0 +1,103 @@
+animals = ["Tiger","Lion","Elephant","Zebra","Girraf"]
+
+# printing
+print(animals[0])
+print(animals[1:4])
+print(animals[:4])
+print(animals[3:])
+print(animals[1:-2])
+print(animals[-1:-2])
+print(animals[-2])
+print(animals[-1:-4]) # it will return an empty list because the printing or elements are accessed by the machine start from left to right ;
+print(animals[-4:-1])
+
+# Insert
+animals.insert(1,"Crow")
+animals.insert(2,"Hippo")
+print(animals)
+
+# Append
+animals.append("Monkey")
+animals.append("Ostritch")
+print(animals)
+
+#length of the list
+print(len(animals))
+
+#removing
+print(animals.pop(1))
+animals.pop(-1)
+print(animals)
+
+
+
+
+
+
+
+
+Students = []
+for i in range(5):
+  name = input("Enter the name of the student: ")
+  Students.append(name)
+print(Students)
+
+Students.pop()  #it delete the last element if index is not known.
+print(Students)
+
+Students.pop(0)  # it delete the element whose index is specified.
+print(Students)
+
+Students.remove("rohan")  #it delete the element mention in it if there are duplicates value then the first occurance of the value in the list is deleted.
+print(Students)
+
+list1 = ["Happy","Beautiful","Greate"]
+list2 = ["sad", "Awful", "bad"]
+list3 = ["some","more","many"]
+new_list = list1 + list2
+print(new_list)
+
+list3.extend(list2)
+print(list3)
+
+
+
+
+shoping = ["Rice", "oil", "Soap"]
+shoping.append("Fruits")
+shoping.append("nuts")
+shoping.remove("oil")
+items = len(shoping)
+print(shoping)
+print("total items = ",items)
+
+
+
+mobile = []
+n1 = int(input("Enter your phone number"))
+n2 = int(input("Enter your phone number"))
+n3 = int(input("Enter your phone number"))
+mobile.append(n1)
+mobile.append(n2)
+mobile.append(n3)
+print("before update :",mobile)
+
+mobile.insert(2,9341356789)
+mobile.pop(-1)
+print("After update",mobile)
+
+data = [12,"Rohan",34526,12,"Rohan","supreme"]
+data.remove(12)
+print(data)
+total = len(data)
+print("total items = ",total)
+print(len(set(data)))
+print(data)
+
+data2 = set(data)
+print(data2)
+
+data3 = list(data2)
+print(data3)
+
+print(data.count("Rohan"))
