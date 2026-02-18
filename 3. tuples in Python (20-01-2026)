@@ -1,0 +1,78 @@
+# creating and manipulating tuple.
+
+immutable = ('happy', 'birthday', 'to', 'you')
+print(immutable)
+
+# accesing using index values:
+print(immutable[0])
+print(immutable[1])
+print(immutable[2])
+print(immutable[3])
+
+
+#slicing funtion in tuple
+print(immutable[-2])
+print(immutable[0:4])
+print(immutable[-4:-1])
+print(immutable[:-1])
+print(immutable[:3])
+print(immutable[1:2])
+
+
+for i in immutable:
+  print(i)
+
+# immutable[-1]="Mohan"
+# print(immutable)
+
+mutable = list(immutable)
+print(mutable)
+mutable[-1] = "Mohan"
+print(mutable)
+mutable.index("Mohan")
+mutable.insert(3,"Rohan")
+print(mutable)
+
+for i in mutable:
+  print(i)
+
+tu = ("happy")
+print(type(tu))
+tu2 = ('happy','')
+print(type(tu2))
+
+
+numbers = (12,34,65,23,21)
+print(min(numbers))
+print(max(numbers))
+print(sum(numbers))
+
+integers = (22,66,67,56,57)
+print("First element =",integers[0])
+print("lastt element =",integers[-1])
+print("length =",len(integers))
+print("sorted tuple =",sorted(integers))
+
+marks = (77,67,88,99,54)
+total = sum(marks)
+average = total/len(marks)
+print("total marks of the student = ",total)
+print("average marks of the student = ",average)
+
+names = []
+for i in range (5):
+  a = input("Enter Your name ")
+  names.append(a)
+print(names)
+
+hello = tuple(names)
+print(hello)
+
+
+items = []
+for i in range(5):
+  a = int(input("enter the values "))
+  items.append(a)
+print(items)
+print(items[::-1])
+print(items[-2:]+items[2:3]+items[0:2])
